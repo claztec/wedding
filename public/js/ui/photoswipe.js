@@ -3137,7 +3137,7 @@ _registerModule('Controller', {
 				}
 				
 			} else if(item.src && !item.loadError) {
-				// image object is created every time, due to bugs of image loading & delay when switching images
+				// image object is created every time, due to bugs of image loading & delay when switching photos
 				img = framework.createEl('pswp__img', 'img');
 				img.style.opacity = 1;
 				img.src = item.src;
