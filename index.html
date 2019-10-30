@@ -682,15 +682,14 @@
 
 
 
-        //Kakao.init('8c7ac8fdd6138eab66a85f46aec3a618');
-        Kakao.init('94a08cfa99972d4a71c99401069b1311');
-        // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+        Kakao.init('a49482f8712e502e947185a673e879ba');
+
         Kakao.Link.createDefaultButton({
             container: '#kakao-link-btn', // 버튼 id
             objectType: 'location', // 카카오톡 링크 타입
             content: {
-                title: $("#invTitle").val(), // 타이틀
-                description: _desc + "\n최재만 이진영 결혼", // 상세정보
+                title: "최재만 이진영 결혼합니다.", // 타이틀
+                description: "2019-12-15 일요일 오후 1시 40분\n웨딩스퀘어 3층 루시드 홀\n(강변역 테크노마트)", // 상세정보
                 imageUrl: _image, // 이미지
                 link: {
                     mobileWebUrl: 'https://jinyoung-jaeman.github.io', // 모바일 주소 걍 location.href
@@ -699,7 +698,7 @@
                 imageWidth: parseInt(_imgWidth), // 이미지가로
                 imageHeight: parseInt(_imgHeight)// 이미지 세로
             },
-            address: $("#locAddr").val() // container 가 location 일때 위치보기 아이콘 이 갈 주소 (ex. 경기 고양시 덕양구 용두로47번안길 47)
+            address: "서울 광진구 광나루로56길 85 강변테크노마트 3층" // container 가 location 일때 위치보기 아이콘 이 갈 주소 (ex. 경기 고양시 덕양구 용두로47번안길 47)
         });
 
 
