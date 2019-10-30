@@ -25,7 +25,9 @@
 
     <script type="text/javascript" src="public/js/ui/photoswipe.js"></script>
     <script type="text/javascript" src="public/js/ui/photoswipe-ui-default.min.js"></script>
-    <script type="text/javascript" src="public/js/kakao.min.js"></script>
+<!--    <script type="text/javascript" src="public/js/kakao.min.js"></script>-->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
     <script type="text/javascript" src="public/js/sns.js"></script>
 
     <link rel="stylesheet" href="resources/css/common.css">
@@ -718,6 +720,7 @@
                 sendSns("twitter", url, txt);
                 return false;
             }
+            console.log("여기??");
         });
 
         $(".galMore").on("click", function(){
